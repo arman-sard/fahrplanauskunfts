@@ -122,7 +122,7 @@ class FilterApiListPageState extends State<FilterApiListPage> {
               query == '' ? this.stations = [] : this.stations = stations;
 
               if (query.isNotEmpty && stations.isEmpty) {
-                validation = 'Keine passenden träfe gefunden';
+                validation = 'Keine passenden Treffer gefunden';
                 fontSize = 14;
                 hightSize = 22;
               } else {

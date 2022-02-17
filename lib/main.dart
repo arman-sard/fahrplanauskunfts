@@ -19,7 +19,7 @@ Future main() async {
 }
 
 class MyApp extends StatelessWidget {
-  static const String title = 'Fahrplanauskunfts';
+  static const String title = 'Fahrplanauskunft';
 
   const MyApp({Key? key}) : super(key: key);
 

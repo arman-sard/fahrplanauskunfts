@@ -96,7 +96,7 @@ class LocationdetailsState extends State<Locationdetails> {
                   children: [
                     Row(
                       children: [
-                        Text('Location details:'),
+                        Text('Details zum Standort:'),
                       ],
                     ),
                     SizedBox(height: 5),
