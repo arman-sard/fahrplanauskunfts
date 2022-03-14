@@ -1,10 +1,10 @@
 class Station {
-  final dynamic locations;
-  final dynamic name;
-  final dynamic type;
-  final dynamic parent;
-  final dynamic disassembledName;
-  final dynamic coord;
+  final String locations;
+  final String name;
+  final String type;
+  final Map<String, dynamic>  parent;
+  final String disassembledName;
+  final List<dynamic>  coord;
 
   const Station({
     required this.locations,
@@ -19,9 +19,9 @@ class Station {
         locations: json['locations']?? '',
         name: json['name']?? '',
         type: json['type']?? '',
-        parent: json['parent']?? '',
+        parent: json['parent'],
         disassembledName: json['disassembledName']?? '',
-        coord: json['coord']?? '',
+        coord: json['coord'],
       );
 
   Map<dynamic, dynamic> toJson() => {
