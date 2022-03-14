@@ -26,13 +26,6 @@ class FilterApiListPageState extends State<FilterApiListPage> {
   String validation = '';
   double fontSize = 0;
   double hightSize = 0;
-  String destinationAdress = '';
-  String destinationCity = '';
-  String destinationType = '';
-  String destinationParentType = '';
-  String disassembledName = '';
-  dynamic coord = '';
-  double animHight = 0;
 
   @override
   void dispose() {
@@ -103,7 +96,6 @@ class FilterApiListPageState extends State<FilterApiListPage> {
           ),
         ),
       );
-
   Widget buildSearch() => SearchWidget(
         text: query,
         hintText: 'Zielort eingeben...',
@@ -145,7 +137,7 @@ class FilterApiListPageState extends State<FilterApiListPage> {
                 padding: EdgeInsets.all(0),
                 onPressed: () {
                   setState(() {
-                    context.read<LocationDetails>().getData(
+                    context.read<LocationDetails>().setData(
                           station.name,
                           station.parent['name'],
                           station.type,

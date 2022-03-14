@@ -2,27 +2,27 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class LocationDetails with ChangeNotifier {
-  dynamic _destinationAdress = '';
-  dynamic _destinationCity = '';
-  dynamic _destinationType = '';
-  dynamic _destinationParentType = '';
-  dynamic _disassembledName = '';
-  dynamic _coord = '';
+  String _destinationAdress = '';
+  String _destinationCity = '';
+  String _destinationType = '';
+  String _destinationParentType = '';
+  String _disassembledName = '';
+  String _coord = '';
 
-  dynamic get destinationAdress => _destinationAdress;
-  dynamic get destinationCity => _destinationCity;
-  dynamic get destinationType => _destinationType;
-  dynamic get destinationParentType => _destinationParentType;
-  dynamic get disassembledName => _disassembledName;
-  dynamic get coord => _coord;
+  String get destinationAdress => _destinationAdress;
+  String get destinationCity => _destinationCity;
+  String get destinationType => _destinationType;
+  String get destinationParentType => _destinationParentType;
+  String get disassembledName => _disassembledName;
+  String get coord => _coord;
 
-  getData(
-      dynamic destinationAdress,
-      dynamic destinationCity,
-      dynamic destinationType,
-      dynamic destinationParentType,
-      dynamic disassembledName,
-      dynamic coord) {
+  setData(
+      String destinationAdress,
+      String destinationCity,
+      String destinationType,
+      String destinationParentType,
+      String disassembledName,
+      String coord) {
     _destinationAdress = destinationAdress;
     _destinationCity = destinationCity;
     _destinationType = destinationType;

@@ -16,7 +16,7 @@ String destinationCity = '';
 String destinationType = '';
 String destinationParentType = '';
 String disassembledName = '';
-dynamic coord = '';
+String coord = '';
 
 
 
@@ -91,27 +91,25 @@ class LocationdetailsState extends State<Locationdetails> {
                     ),
                   ],
                 ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        Text('Details zum Standort:'),
-                      ],
-                    ),
-                    SizedBox(height: 5),
-                    Text(destinationAdress),
-                    SizedBox(height: 5),
-                    Text(destinationCity),
-                    SizedBox(height: 5),
-                    Text(destinationType),
-                    SizedBox(height: 5),
-                    Text(destinationParentType),
-                    SizedBox(height: 5),
-                    Text(disassembledName),
-                    SizedBox(height: 5),
-                    Text(coord),
-                  ],
+                child: SizedBox(
+                  height: 200,
+                  child: Column(                  
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Row(
+                        children: [
+                          Text('Details zum Standort:', style: TextStyle(fontWeight: FontWeight.bold)),
+                        ],
+                      ),
+                      Text(destinationAdress),
+                      Text(destinationCity),
+                      Text(destinationType),
+                      Text(destinationParentType),
+                      Text(disassembledName),
+                      Text(coord),
+                    ],
+                  ),
                 ),
               ),
             ],
